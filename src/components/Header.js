@@ -1,11 +1,10 @@
-// Header.js
 import React from "react";
 import { AppBar, Toolbar, Typography, Button, Box, Container, Avatar } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthProvider";
 
 const Header = () => {
-  const { user, setUser, logout } = useAuth(); // Add setUser here
+  const { user, setUser, logout } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = () => {

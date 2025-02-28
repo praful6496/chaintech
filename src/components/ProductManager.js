@@ -175,7 +175,6 @@ const ProductManager = () => {
           </Button>
         </Box>
       </Box>
-      {sortedProducts.length > 0 && (
       <Box mb={3}>
         <Grid container spacing={2}>
           {/* Filter by Product Name */}
@@ -204,7 +203,7 @@ const ProductManager = () => {
             </FormControl>
           </Grid>
         </Grid>
-      </Box>)}
+      </Box>
 
       {/* Display filtered and sorted products */}
       <Grid container spacing={2}>
